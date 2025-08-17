@@ -1,2 +1,5 @@
 def hieu_say_hello():
-    pass
+    print("Hello from ChiHieu ")
+    print("This is a module from ChiHieu")
+
+    
