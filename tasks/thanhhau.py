@@ -1,2 +1,3 @@
 def thau_say_hello():
-    pass
+    print("Hello haotran")
+    print("This is a message from the Thanh Hau module.")
