@@ -1,2 +1,2 @@
 def hiep_say_hello():
-    pass
+    return "Hello, Hiep!"
