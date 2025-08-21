@@ -51,12 +51,15 @@ class StudentUpdate(BaseModel):
         return v
     
 class StudentOut(BaseModel):
-    id: str 
-    name: str
-    age: int
-    gpa: float 
 
-    class Config:
-        orm_mode = True  # Cho phép chuyển đổi từ ORM model sang Pydantic model
-    
+
+    # cho phép chuyển đổi từ ORM model sang Pydantic model
+    @classmethod
+    def from_orm(cls, orm_model):
+        return cls(
+            id=orm_model.id,
+            name=orm_model.name,
+            age=orm_model.age,
+            gpa=orm_model.gpa
+        )
 
