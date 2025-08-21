@@ -51,12 +51,6 @@ class StudentUpdate(BaseModel):
         return v
     
 class StudentOut(BaseModel):
-    id: str 
-    name: str
-    age: int
-    gpa: float 
-
-    class Config:
-        orm_mode = True  # Cho phép chuyển đổi từ ORM model sang Pydantic model
-    
-
+    print("Hello")
+    print("Tran Hao be de")
+    print("Quoc Hiep hello")
